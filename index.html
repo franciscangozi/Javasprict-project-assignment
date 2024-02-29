@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Comfy Funiture House</title>
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css" integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK" crossorigin="anonymous">
+ <link rel="stylesheet" href="main.css">
+</head>
+<body>
+ <!---Nav bar----------->
+ <nav class="navbar">
+  <div class="navbar-center">
+   <span class="nav-icon">
+    <i class="fas fa-bars"></i>
+   </span>
+   <img src="./Images/logo.jpg" width="100" alt="store logo">
+   <div class="cart-btn">
+    <span class="nav-icon">
+     <i class="fas fa-cart-plus"></i>
+    </span>
+    <div class="cart-items">0</div>
+   </div>
+   </div>
+ </nav>
+
+ <!-----End of Nav bar--------->
+
+ <!-----Hero-------------->
+ <header class="hero">
+  <div class="banner">
+   <h1 class="banner-title">Funiture collections</h1>
+   <button class="banner-btn">Shop now...</button>
+  </div>
+ </header>
+ <!-----End of Hero-------------->
+ <!-----Products----------->
+ <section class="products">
+  <div class="section-title">
+   <h2> Our products</h2>
+  </div>
+  <div class="products-center">
+  </div>
+ </section>
+ <!----end of-Products----------->
+ <!-----cart------->
+ <div class="cart-overlay">
+  <div class="cart">
+   <span class="close-cart">
+    <i class="fas-fa-window-close"></i>
+   </span>
+   <h2>your cart</h2>
+   <div class="cart-content">
+    <!---cart item-->
+    <div class="cart-item">
+      <img src="./Images/Product1.jpeg" alt="product"/>
+    <div>
+    <h4>wooden chairs</h4>
+    <h5>$50.00</h5>
+    <span class="remove-item">remove</span>
+   </div>
+   <div>
+    <i class="fas fa-chevron-up"></i>
+    <p class="item-amount">1</p>
+    <i class="fas fa-chevron-down"></i>
+   </div>
+   </div>
+   <div class="cart-item">
+    <img src="./Images/Product2.jpeg" alt="product"/>
+  <div>
+  <h4>wooden chairs</h4>
+  <h5>$50.00</h5>
+  <span class="remove-item">remove</span>
+ </div>
+ <div>
+  <i class="fas fa-chevron-up"></i>
+  <p class="item-amount">1</p>
+  <i class="fas fa-chevron-down"></i>
+ </div>
+ </div>
+    <!----end of -cart------->
+   </div>
+   <div class="cart-footer">
+    <h3>your total : $ <span class="cart-footer">0</span></h3>
+    <button class="clear-cart banner-btn">clear-cart</button>
+   </div>
+  </div>
+ <!----end of cart-->
+ <script src="app.js"></script>
+</body>
+</html>
