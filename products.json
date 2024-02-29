@@ -1,10 +1,10 @@
-{"items":[{"sys": { "id": "1" },"fields": {"title": "wooden chairs","price": 10.99,"image": { "fields": { "file": { "src":"./Images/Product1.jpeg" } } }
+{"items":[{"sys": { "id": "1" },"fields": {"title": "wooden chairs","price": 10.99,"image": { "fields": { "file": { "src": "./Images/Product1.jpeg" } } }
 }
 },
 {"sys": { "id": "2" },"fields": {
        "title": "black leather L shape sofar",
        "price": 12.99,
-       "image": { "fields": { "file": { "src":"./Images/Product2.jpeg" } } }
+       "image": { "fields": { "file": { "src": "./Images/Product2.jpeg" } } }
      }
    },
    {
@@ -12,7 +12,7 @@
      "fields": {
        "title": "cream fabric  shape sofar",
        "price": 12.99,
-       "image": { "fields": { "file": { "src":"./Images/Product3.jpeg" } } }
+       "image": { "fields": { "file": { "src": "./Images/Product3.jpeg" } } }
      }
    },
    {
