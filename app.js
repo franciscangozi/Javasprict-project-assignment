@@ -10,6 +10,7 @@
 
 const cartBtn = document.querySelector(".cart-btn");
 const closeCartBtn = document.querySelector(".close-cart");
+const clearCartBtn = document.querySelector(".clear-cart");
 const cartOverlay = document.querySelector(".cart-overlay");
 const cartDOM = document.querySelector(".cart");
 const cartItems = document.querySelector(".cart-items");
@@ -128,11 +129,10 @@ class UI {
 
    
     <i class="bi bi-arrow-up-short" data-id=${item.id}></i>
-    <p class="item-amount">${item.amount}1</p>
+    <p class="item-amount">${item.amount}</p>
     <i class="bi bi-arrow-down-short" data-id=${item.id}></i>
    </div>`;
     cartContent.appendChild(div);
-    console.log("bag buttons");
   }
   showCart() {
     cartOverlay.classList.add("transparentBcg");
@@ -148,6 +148,7 @@ class UI {
   populateCart(cart) {
     cart.forEach((item) => this.addCartItem(item));
   }
+
   hideCart() {
     cartOverlay.classList.remove("transparentBcg");
     cartDOM.classList.remove("showCart");
@@ -158,6 +159,7 @@ class UI {
     clearCartBtn.addEventListener("click", () => {
       this.clearCart();
     });
+
     // cart functionality
     cartContent.addEventListener("click", (event) => {
       if (event.target.classList.contains("remove-item")) {
@@ -165,7 +167,7 @@ class UI {
         let id = removeItem.dataset.id;
         cartContent.removeChild(removeItem.parentElement.parentElement);
         this.removeItem(id);
-      } else if (event.target.classList.contains("fa-chevron-up")) {
+      } else if (event.target.classList.contains("bi-arrow-up-short")) {
         let addAmount = event.target;
         let id = addAmount.dataset.id;
         let tempItem = cart.find((item) => item.id === id);
@@ -173,7 +175,7 @@ class UI {
         Storage.saveCart(cart);
         this.setCartValues(cart);
         addAmount.nextElementSibling.innerText = tempItem.amount;
-      } else if (event.target.classList.contains("fa-chevron-down")) {
+      } else if (event.target.classList.contains("bi-arrow-down-short")) {
         let lowerAmount = event.target;
         let id = lowerAmount.dataset.id;
         let tempItem = cart.find((item) => item.id === id);
@@ -187,11 +189,13 @@ class UI {
           this.removeItem(id);
         }
       }
+      console.log("clicked");
     });
   }
   clearCart() {
     let cartItems = cart.map((item) => item.id);
     cartItems.forEach((id) => this.removeItem(id));
+
     while (cartContent.children.length > 0) {
       cartContent.removeChild(cartContent.children[0]);
     }
@@ -209,7 +213,6 @@ class UI {
     return buttonsDOM.find((button) => button.dataset.id === id);
   }
 }
-
 // Local storage
 class Storage {
   static saveProducts(products) {
@@ -243,5 +246,6 @@ document.addEventListener("DOMContentLoaded", () => {
     })
     .then(() => {
       ui.getBagButtons();
+      ui.cartLogic();
     });
 });
