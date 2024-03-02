@@ -1,45 +1,56 @@
-{"items":
-[{"sys": { "id": "1" },"fields":
- {"title": "wooden chairs","price": 10.99,
- "image": { "fields": { "file": { "src": "./Images/Product1.jpeg" } } }
+{
+ "items":[
+  {
+   "sys": { "id": "1" },
+  "fields":{
+   "title": "wooden chairs",
+   "price": 10.99,
+ "image": { "fields": { "file": { "url": "./Images/Product1.jpeg" } } }
 }
 },
-{"sys": { "id": "2" },"fields": 
-{"title": "black leather L shape sofar","price": 12.99,
-"image": { "fields": { "file": { "src": "./Images/Product2.jpeg" } } }
+{
+ "sys": { "id": "2" },
+ "fields": {"title": "black leather L shape sofar",
+ "price": 12.99,
+"image": { "fields": { "file": { "url": "./Images/Product2.jpeg" } } }
 }
 },
-{ "sys": { "id": "3" },"fields": 
-{"title": "cream fabric  shape sofar","price": 12.99,
-"image": { "fields": { "file": { "src": "./Images/Product3.jpeg" } } }
+{ 
+ "sys": { "id": "3" },
+ "fields": {"title": "cream fabric  shape sofar",
+ "price": 12.99,
+"image": { "fields": { "file": { "url": "./Images/Product3.jpeg" } } }
 }
 },
-{ "sys": { "id": "4" }, "fields":
- { "title": "twin panel bed","price": 22.99,
-"image": { "fields": { "file": { "src":"./Images/Product4.jpeg"} } }
+{ 
+ "sys": { "id": "4" },
+  "fields":{ "title": "twin panel bed",
+  "price": 22.99,
+"image": { "fields": { "file": { "url":"./Images/Product4.jpeg"} } }
 }
 },
-{ "sys": { "id": "5" },"fields": 
-{ "title": "grey single sitter","price": 88.99,
-"image": { "fields": { "file": { "src": "./Images/Product5.jpeg" } } }
+{ "sys": { "id": "5" },
+"fields": { "title": "grey single sitter",
+"price": 88.99,
+"image": { "fields": { "file": { "url": "./Images/Product5.jpeg" } } }
 }
 },
 { "sys": { "id": "6" },"fields": 
 { "title": "royal single sitter",
 "price": 32.99,
-"image": { "fields": { "file": { "src": "./Images/Product6.jpeg" } } }
+"image": { "fields": { "file": { "url": "./Images/Product6.jpeg" } } }
 }
 },
 {"sys": { "id": "7" },"fields": 
 { "title": "wooden dinning set",
 "price": 45.99,
-"image": { "fields": { "file": { "src": "./Images/Product8.jpeg" } } }
+"image": { "fields": { "file": { "url": "./Images/Product8.jpeg" } } }
 }
 },
 { "sys": { "id": "8" },"fields": 
 { "title": "table",
 "price": 33.99,
-"image": { "fields": { "file": { "src": "./Images/Product10.jpeg" } } }
+"image": { "fields": { "file": { "url": "./Images/Product10.jpeg" } } }
 }
 }
 ]
